@@ -1,0 +1,237 @@
+.container {
+  background-color: #1d1e28;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero {
+  background: linear-gradient(
+    180deg,
+    #1d1e28 0.12%,
+    #261c2d 94.84%,
+    #261a2d 100%
+  );
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    max-width: 100%;
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  min-height: 569px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 60px;
+}
+
+@media (max-width: 991px) {
+  .hero-content {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.countdown-container {
+  position: relative;
+  display: flex;
+  width: 688px;
+  max-width: 100%;
+  flex-direction: column;
+  margin: 58px 0 19px;
+}
+
+@media (max-width: 991px) {
+  .countdown-container {
+    margin-top: 40px;
+  }
+}
+
+.countdown-title {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 7.5px;
+  text-transform: uppercase;
+  align-self: center;
+  font: 700 22px "Red Hat Text", sans-serif;
+}
+
+@media (max-width: 991px) {
+  .countdown-title {
+    max-width: 100%;
+  }
+}
+
+.countdown {
+  margin-top: 111px;
+}
+
+@media (max-width: 991px) {
+  .countdown {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.countdown-row {
+  gap: 20px;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .countdown-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+}
+
+.countdown-col {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 25%;
+  margin-left: 0;
+}
+
+@media (max-width: 991px) {
+  .countdown-col {
+    width: 100%;
+  }
+}
+
+.countdown-item {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .countdown-item {
+    margin-top: 32px;
+    white-space: initial;
+  }
+}
+
+.countdown-value {
+  border-radius: 8px;
+  background-color: #191a23;
+  display: flex;
+  padding-bottom: 10px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 80px;
+  color: #fb5e84;
+  letter-spacing: -2.4px;
+  line-height: 89%;
+  width: 149px;
+  height: 149px;
+}
+
+@media (max-width: 991px) {
+  .countdown-value {
+    font-size: 40px;
+    white-space: initial;
+  }
+}
+
+.countdown-card {
+  border-radius: 8px;
+  background-color: #343650;
+  display: flex;
+  width: 100%;
+  padding-bottom: 41px;
+  flex-direction: column;
+}
+
+@media (max-width: 991px) {
+  .countdown-card {
+    font-size: 40px;
+    white-space: initial;
+  }
+}
+
+.countdown-card-top {
+  border-radius: 0 0 8px 8px;
+  background-color: #000;
+  height: 70px;
+}
+
+.countdown-card-bottom {
+  z-index: 10;
+  display: flex;
+  margin-top: -29px;
+  align-items: center;
+  gap: 19px;
+}
+
+@media (max-width: 991px) {
+  .countdown-card-bottom {
+    font-size: 40px;
+    white-space: initial;
+  }
+}
+
+.countdown-dot {
+  background-color: #191a23;
+  border-radius: 50%;
+  align-self: stretch;
+  width: 6px;
+  height: 12px;
+  margin: auto 0;
+}
+
+.countdown-number {
+  font-family: "Red Hat Text", sans-serif;
+  align-self: stretch;
+}
+
+@media (max-width: 991px) {
+  .countdown-number {
+    font-size: 40px;
+  }
+}
+
+.countdown-label {
+  color: #8385a9;
+  letter-spacing: 5.92px;
+  align-self: center;
+  margin-top: 20px;
+  font: 14px "Red Hat Text", sans-serif;
+}
+
+.countdown-hills {
+  aspect-ratio: 7.14;
+  object-fit: auto;
+  object-position: center;
+  width: 100%;
+  margin-top: 31px;
+}
+
+@media (max-width: 991px) {
+  .countdown-hills {
+    max-width: 100%;
+  }
+}
